@@ -1,4 +1,4 @@
-package Math.Matrices;
+package Matrices;
 
 public class MatricesMath {
     int row, column;
