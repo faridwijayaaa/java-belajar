@@ -7,11 +7,11 @@ public class AppMatricesMath {
     public static void main(String[] args) {
         MatricesMath matricesMath = new MatricesMath();
         Scanner input = new Scanner(System.in);
-        int a[][] = { { 2, -3 }, { 1, 6 } };
-        int b[][] = { { 4, 1 }, { 5, -2 } };
+        int a[][] = { { 2, -3, 2 }, { 1, 6, 1 }, { 5, -3, 6 } };
+        int b[][] = { { 4, 1, 3 }, { 5, -2, 5 }, { 7, -4, -2 } };
         int c[][];
-        matricesMath.setRow(2);
-        matricesMath.setColumn(2);
+        matricesMath.setRow(3);
+        matricesMath.setColumn(3);
 
         System.out.println("Matrix A");
         matricesMath.print(a);
@@ -36,6 +36,7 @@ public class AppMatricesMath {
             case 2:
                 System.out.println("Matrix A - B");
                 c = matricesMath.subtraction(a, b);
+                matricesMath.print(c);
                 break;
             case 3:
                 System.out.println("Matrix A * B");

@@ -52,10 +52,14 @@ public class MatricesMath {
     public void print(int[][] a) {
         for (int i = 0; i < getRow(); i++) {
             for (int j = 0; j < getColumn(); j++) {
-                if (a[i][j] > 0) {
+                if (a[i][j] < -9) {
+                    System.out.print(a[i][j] + "  ");
+                } else if (a[i][j] > 9) {
+                    System.out.print(" " + a[i][j] + "  ");
+                } else if (a[i][j] > 0) {
                     System.out.print(" " + a[i][j] + "   ");
                 } else {
-                    System.out.print(a[i][j] + " ");
+                    System.out.print(a[i][j] + "   ");
                 }
             }
             System.out.println();
